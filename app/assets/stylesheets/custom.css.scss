@@ -24,6 +24,27 @@ textarea {
   margin-bottom: 10px;
 }
 
+.stats {
+  overflow: auto;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $grayLighter;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
 /* sidebar */
 
 aside {
@@ -61,6 +82,12 @@ aside {
   width: 100%;
   margin-top: 45px;
   @include box_sizing;
+}
+
+.feed_item, .user_item {
+  display: inline-block;
+  border: 1px solid #CCC;
+  padding: 5px 10px;
 }
 
 aside {
